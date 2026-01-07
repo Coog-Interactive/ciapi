@@ -8,8 +8,10 @@ DISCORD_WEBHOOK = ENV['DISCORD_WEBHOOK']
 ENDPOINT_SECRET = ENV['STRIPE_ENDPOINT_SECRET']
 Stripe.api_key = ENV['STRIPE_API_KEY']
 
-get '/payment' do
-  "<h1>Test!</h1><form action='/payment' method='POST'><button type='submit'>Checkout</button></form>"
+if settings.environment == :development
+  get '/payment' do
+    "<h1>Test!</h1><form action='/payment' method='POST'><button type='submit'>Checkout</button></form>"
+  end
 end
 
 post '/payment' do
