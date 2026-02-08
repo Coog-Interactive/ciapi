@@ -18,9 +18,10 @@ You will need a Discord account and the Stripe CLI to test the payment system.
 ./stripe listen --forward-to localhost:4567/payment/webhook
 ```
 ### 2. Populate the `.env` file with the following environement variables:
-1. `DISCORD_WEBHOOK` You can create one for your testing.
-2. `STRIPE_API_KEY` You can use Stripe's public sample key available in their docs.
-3. `STRIPE_ENDPOINT_SECRET` You will get this from the `stripe` CLI when you have it start listening.
+1. `APP_ENV` This should be set either to `development` or `production`.
+2. `DISCORD_WEBHOOK` You can create one for your testing.
+3. `STRIPE_API_KEY` You can use Stripe's public sample key available in their docs.
+4. `STRIPE_ENDPOINT_SECRET` You will get this from the `stripe` CLI when you have it start listening.
 
 ### 3. Start the Ruby App
 ```

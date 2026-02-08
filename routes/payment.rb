@@ -4,6 +4,7 @@ require 'json'
 require 'httparty'
 require 'dotenv/load'
 
+settings.environment = ENV['APP_ENV']
 DISCORD_WEBHOOK = ENV['DISCORD_WEBHOOK']
 ENDPOINT_SECRET = ENV['STRIPE_ENDPOINT_SECRET']
 Stripe.api_key = ENV['STRIPE_API_KEY']
