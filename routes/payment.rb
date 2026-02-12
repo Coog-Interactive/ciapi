@@ -23,7 +23,7 @@ post '/payment' do
         product_data: {
           name: 'Membership'
         },
-        unit_amount: 1000,
+        unit_amount: 2000,
       },
       quantity: 1
     }],
