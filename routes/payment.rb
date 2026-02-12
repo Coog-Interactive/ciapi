@@ -29,7 +29,7 @@ post '/payment' do
     }],
     mode: 'payment',
     cancel_url: 'https://cooginteractive.com/club',
-    success_url: 'http://localhost:4567/payment/success',
+    success_url: 'https://cooginteractive.com/club/pay-success',
     custom_fields: [
       {
         key: 'uh-id',
